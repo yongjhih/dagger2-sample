@@ -1,5 +1,5 @@
 package coffee;
 
 interface Pump {
-  void pump();
+  boolean pump();
 }

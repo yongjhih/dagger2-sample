@@ -12,6 +12,12 @@ public class CoffeeApp {
 
   public static void main(String[] args) {
     Coffee coffee = Dagger_CoffeeApp_Coffee.create();
+    coffee.maker().on();
     coffee.maker().brew();
+    coffee.maker().brew();
+    coffee.maker().off();
+
+    coffee.maker().brew();
+    coffee.maker().off();
   }
 }

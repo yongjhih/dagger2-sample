@@ -12,10 +12,15 @@ class CoffeeMaker {
     this.pump = pump;
   }
 
+  public void on() {
+    if (!heater.get().isHot()) heater.get().on();
+  }
+
   public void brew() {
-    heater.get().on();
-    pump.pump();
-    System.out.println(" [_]P coffee! [_]P ");
-    heater.get().off();
+    if (pump.pump()) System.out.println(" [_]P coffee! [_]P ");
+  }
+
+  public void off() {
+      if (heater.get().isHot()) heater.get().off();
   }
 }

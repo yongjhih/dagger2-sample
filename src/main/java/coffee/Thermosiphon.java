@@ -10,9 +10,11 @@ class Thermosiphon implements Pump {
     this.heater = heater;
   }
 
-  @Override public void pump() {
+  @Override public boolean pump() {
     if (heater.isHot()) {
       System.out.println("=> => pumping => =>");
+      return true;
     }
+    return false;
   }
 }
