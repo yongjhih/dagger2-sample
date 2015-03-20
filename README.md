@@ -18,6 +18,7 @@ coffee.maker().off();
 ```
 
 ```
+$ ./gradlew execute
 ~ ~ ~ heating ~ ~ ~
 => => pumping => =>
  [_]P coffee! [_]P 
