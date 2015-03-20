@@ -8,7 +8,7 @@
 
 ## Getting Start
 
-Main: ![src/main/java/coffee/CoffeeApp.java](src/main/java/coffee/CoffeeApp.java)
+Main: [src/main/java/coffee/CoffeeApp.java](src/main/java/coffee/CoffeeApp.java)
 
 ```java
 Coffee coffee = Dagger_CoffeeApp_Coffee.create();
