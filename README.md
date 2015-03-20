@@ -12,7 +12,9 @@ Main: [src/main/java/coffee/CoffeeApp.java](src/main/java/coffee/CoffeeApp.java)
 
 ```java
 Coffee coffee = Dagger_CoffeeApp_Coffee.create();
+coffee.maker().on();
 coffee.maker().brew();
+coffee.maker().off();
 ```
 
 ## See Also
