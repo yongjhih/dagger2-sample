@@ -17,6 +17,12 @@ coffee.maker().brew();
 coffee.maker().off();
 ```
 
+```
+~ ~ ~ heating ~ ~ ~
+=> => pumping => =>
+ [_]P coffee! [_]P 
+```
+
 ## See Also
 
 * Import from https://github.com/google/dagger/tree/master/examples/simple/src/main/java/coffee
