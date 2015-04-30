@@ -8,13 +8,11 @@
 
 ## Getting Start
 
-Main: [src/main/java/coffee/CoffeeApp.java](src/main/java/coffee/CoffeeApp.java)
+Main: [examples/simple/src/main/java/coffee/CoffeeApp.java](examples/simple/src/main/java/coffee/CoffeeApp.java)
 
 ```java
-Coffee coffee = Dagger_CoffeeApp_Coffee.create();
-coffee.maker().on();
-coffee.maker().brew();
-coffee.maker().off();
+    Coffee coffee = DaggerCoffeeApp_Coffee.builder().build();
+    coffee.maker().brew();
 ```
 
 ```
@@ -26,5 +24,4 @@ $ ./gradlew execute
 
 ## See Also
 
-* Import from https://github.com/google/dagger/tree/master/examples/simple/src/main/java/coffee
 * Official CoffeeMaker Documentation: http://google.github.io/dagger/
