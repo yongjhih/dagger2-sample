@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.jimdo.gradle:gradle-apt-plugin:+'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'apt'
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.dagger:dagger:2.+'
+    apt "com.google.dagger:dagger-compiler:+"
+}
+
+task execute(type:JavaExec) {
+   main = 'coffee.CoffeeApp'
+   classpath = sourceSets.main.runtimeClasspath
+}
