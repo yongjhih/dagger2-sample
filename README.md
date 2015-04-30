@@ -1,5 +1,7 @@
 # CoffeeMaker Dagger2-Sample
 
+[![Build Status](https://travis-ci.org/yongjhih/dagger2-sample.svg)](https://travis-ci.org/yongjhih/dagger2-sample)
+
 ## Usage
 
 ```bash
